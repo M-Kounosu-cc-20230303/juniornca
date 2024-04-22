@@ -40,15 +40,16 @@ body {
   font-size: 20px;
 }
 
-.margin-div{
+.margin-div {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.footer-logo {
+  width: 300px;
+  height: 80px;
 }
