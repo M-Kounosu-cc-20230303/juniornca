@@ -24,9 +24,9 @@ const Header = () => {
   ];
 
   return (
-    // <header className="w-[350px] h-screen h-full py-6 px-5 bg-white border-b-8 border-red-500 border-primary flex flex-col justify-start items-center shadow-right">
-    <header className="w-full md:h-full md:w-[350px] z-2 min-w-[350px] fixed z-[99] w-[350px] h-screen py-6 px-5 bg-white border-b-8 border-red-500 flex flex-col justify-start items-center shadow-right">
-      <div className="flex flex-col items-center w-full mb-10  inline-flex">
+    // <header className="w-full md:h-full md:w-[350px] z-2 min-w-[350px] fixed z-[99] w-[350px] h-screen py-6 px-5 bg-white border-b-8 border-red-500 flex flex-col justify-start items-center shadow-right relative fixed top-0">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white h-screen shadow border-b-8 border-red-500 md:h-full md:w-[350px]">
+      <div className="flex flex-col items-center w-full mb-10 inline-flex">
         <div className="w-[150px] h-27 justify-center items-center flex">
           <Link href="/">
             <img src="/images/logo.jpg" alt="logo" />
