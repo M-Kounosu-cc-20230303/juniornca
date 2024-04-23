@@ -1,89 +1,128 @@
 import React from "react";
 import Link from "next/link";
 
+//ms:
+
 const Footer = () => {
   return (
-    <footer className="bg-black absolute bottom-0 w-full pl-[350px]">
-      <div className="pt-11 pb-6 bg-base2 text-white">
-        <div>
-          <div className="text-center mb-4">
-            <h3 className="text-[20px]">NCAジュニアアスリートクラブ</h3>
-            <div>
-              ＜主催＞
-              <br />
-              一般社団法人日本コンディショニング協会（NCA）
-            </div>
+    <footer className="bg-black">
+      <div className="w-full pt-11 pb-6 bg-bace2 text-white md:pb-0">
+        <div className="mx-auto w-[300px] md:w-[768px]">
+          <div className="leading-[27px] text-left ">
+            NCAジュニアアスリートクラブ
           </div>
+          <p className="text-left text-[12px] py-[1.5rem]">
+            ＜主催＞
+            <br />
+            一般社団法人日本コンディショニング協会（NCA）
+          </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center w-full">
-          <div className="flex flex-col w-full md:w-auto mr-14">
-            <div className="">
+        <div className="mx-auto w-[300px] md:w-[768px] md:flex md:justify-between">
+          <div className="md:w-[350px]">
+            <div className="flex flex-col">
               <iframe
                 width="350"
                 height="200"
                 src="http://maps.google.co.jp/maps?&output=embed&q=東京都世田谷区太子堂4-4-1 来るビル4F&z=18"
               ></iframe>
               <div className="my-[1.5rem]">
-                <p className="md:inline-block text-left">〒154-0004</p>
-                <br />
-                <p className="md:inline-block text-left">
+                <p className="inline-block text-left">
+                  〒154-0004
+                  <br />
+                </p>
+                <p className="inline-block text-left">
                   東京都世田谷区太子堂4-4-1 来るビル4F
                 </p>
               </div>
-              <div className="my-[1.5rem]">
-                <p className="md:inline-block text-left">03-5779-6814</p>
-                <br />
-                <p className="md:inline-block text-left">@e-nca.jp</p>
-              </div>
-              <div className="flex justify-center items-center gap-4">
-                <div className="mb-5 hover:opacity-70">
-                  <Link href="/">
-                    <img src="/images/instagram.png" alt="logo" />
-                  </Link>
+              <div className="flex flex-col gap-4">
+                <div className="flex">
+                  <p className="ml-1">03-5779-6814</p>
                 </div>
-                <div className="mb-5 hover:opacity-70">
-                  <Link href="/">
-                    <img src="/images/facebook.png" alt="logo" />
-                  </Link>
-                </div>
-                <div className="mb-5 hover:opacity-70">
-                  <Link href="/">
-                    <img src="/images/line.png" alt="logo" />
-                  </Link>
-                </div>
-                <div className="mb-5 hover:opacity-70">
-                  <Link href="/">
-                    <img src="/images/youtube.png" alt="logo" />
-                  </Link>
+                <div className="flex">
+                  <p className="ml-1">desk@e-nca.jp</p>
                 </div>
               </div>
             </div>
+            <div className="w-full flex justify-between my-[2rem] md:mb-0">
+              <Link
+                href="/"
+                
+              >
+                <div className="mb-0 hover:opacity-70">
+                  <img
+                    src="/images/instagram.png"
+                    alt="instagram"
+                    className="w-full"
+                  />
+                </div>
+              </Link>
+              <Link href="/">
+                <div className="mb-0 hover:opacity-70">
+                  <img
+                    src="/images/facebook.png"
+                    alt="facebook"
+                    className="w-full"
+                  />
+                </div>
+              </Link>
+              <Link href="/">
+                <div className="mb-0 hover:opacity-70">
+                  <img src="/images/line.png" alt="line" className="w-full" />
+                </div>
+              </Link>
+              <Link
+                href="/"
+              >
+                <div className="mb-0 hover:opacity-70">
+                  <img
+                    src="/images/youtube.png"
+                    alt="youtube"
+                    className="w-full"
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
-          <div className="flex flex-col items-center gap-4">
-            <Link href="/">
-              <img src="/images/NCA.jpg" alt="logo" className="footer-logo" />
-            </Link>
-            <Link href="/">
-              <img src="/images/Nm.jpg" alt="logo" className="footer-logo" />
-            </Link>
-            <Link href="/">
-              <img src="/images/Shop.jpg" alt="logo" className="footer-logo" />
-            </Link>
-            <Link href="/">
-              <img
-                src="/images/YA_Official.jpg"
-                alt="logo"
-                className="footer-logo"
-              />
-            </Link>
-            <Link href="/">
-              <img
-                src="/images/HEARTH.jpg"
-                alt="logo"
-                className="footer-logo"
-              />
-            </Link>
+          <div className="flex flex-col gap-4 md:h-full md:justify-between md:gap-7 banner">
+            <div className="flex flex-col items-center gap-4">
+              <Link href="/">
+                <img src="/images/NCA.jpg" alt="logo" className="footer-logo" />
+              </Link>
+              <Link href="/">
+                <img src="/images/Nm.jpg" alt="logo" className="footer-logo" />
+              </Link>
+              <Link href="/">
+                <img
+                  src="/images/Shop.jpg"
+                  alt="logo"
+                  className="footer-logo"
+                />
+              </Link>
+              <Link href="/">
+                <img
+                  src="/images/YA_Official.jpg"
+                  alt="logo"
+                  className="footer-logo"
+                />
+              </Link>
+              <Link href="/">
+                <img
+                  src="/images/HEARTH.jpg"
+                  alt="logo"
+                  className="footer-logo"
+                />
+              </Link>
+            </div>
           </div>
+        </div>
+        <div className="text-[12px] md:text-[14px] flex flex-col gap-2 text-center py-8 md:flex-row md:gap-4 md:justify-center">
+          <Link href="/" className="hover:underline">
+            サイトマップ
+          </Link>
+          <div className="hidden md:inline-block">|</div>
+          <Link href="/" className="hover:underline">
+            会員規約
+          </Link>
         </div>
       </div>
     </footer>
