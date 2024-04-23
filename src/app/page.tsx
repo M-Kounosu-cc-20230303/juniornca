@@ -1,6 +1,6 @@
 import Footer from "@/components/atoms/layout/Footer";
 import FooterLogo from "@/components/atoms/layout/FooterLogo";
-import Header from "@/components/atoms/layout/Header";
+import Header from "@/components/atoms/layout/Header.client";
 import Head from "next/head";
 
 export default function Home() {

@@ -5,8 +5,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-black">
+    <footer className="bg-black main-content">
       <div className="w-full pt-11 pb-6 bg-bace2 text-white md:pb-0">
+        <div className="fixed top-0 left-0 h-full z-50 bg-white h-screen"></div>
         <div className="mx-auto w-[300px] md:w-[768px]">
           <div className="leading-[27px] text-left ">
             NCAジュニアアスリートクラブ

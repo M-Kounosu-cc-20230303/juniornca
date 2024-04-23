@@ -53,3 +53,26 @@ body {
   width: 300px;
   height: 80px;
 }
+
+.main-content {
+  padding-left: 360px;
+}
+
+/* CSSファイルまたは<style>タグ内 */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-button {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
