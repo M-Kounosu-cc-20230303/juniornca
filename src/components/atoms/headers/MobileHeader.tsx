@@ -26,14 +26,14 @@ const MobileHeader = () => {
   ];
 
   return (
-    <div className="fixed top-0 left-0 z-50 bg-white w-full  shadow-md border-b-8 border-red-500 px-6 py-6 scrollbar-hidden overflow-y-scroll">
+    <div className="fixed top-0 left-0 z-50 bg-white w-full  shadow-md  px-3 py-3 scrollbar-hidden overflow-y-scroll shadow-md">
       <div className="flex justify-between items-center w-full">
         <Link href="/">
           <p>
             <img
               src="/images/logo.jpg"
               alt="ロゴ"
-              className="w-[150px] h-[70px]"
+              className="w-[100px] h-[45px]"
             />
           </p>
         </Link>
@@ -58,7 +58,6 @@ const MobileHeader = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

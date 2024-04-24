@@ -1,6 +1,7 @@
-import Footer from "@/components/atoms/footer/Footer";
-import FooterLogo from "@/components/atoms/footer/FooterLogo";
-import Header from "@/components/atoms/header/Header.client";
+import TopArea from "@/components/atoms/TopArea";
+import Footer from "@/components/atoms/footers/Footer";
+import FooterLogo from "@/components/atoms/footers/FooterLogo";
+import Header from "@/components/atoms/headers/Header.client";
 import Head from "next/head";
 
 export default function Home() {
@@ -16,14 +17,26 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <div>
-          <section className=""></section>
-          <section className=""></section>
-          <section className=""></section>
-          <section className=""></section>
-          <section className=""></section>
-          <section className=""></section>
-        </div>
+        <TopArea />
+        <div className="w-full h-[40px] md:h-[61px] relative"></div>
+        <section className="main-content">
+          <div className="flex">
+            <div>
+              <h2 className="text-black font-semibold text-3xl">SCHEDULE</h2>
+            </div>
+            <div className="w-[22.23px] h-3 pb-[10px] relative">
+              <img src="/images/arrow.jpg" alt="" className="" />
+            </div>
+          </div>
+          <div className="mt-6">
+            <p className="text-sm text-black">スケジュールがありません。</p>
+          </div>
+        </section>
+        <section className=""></section>
+        <section className=""></section>
+        <section className=""></section>
+        <section className=""></section>
+        <section className=""></section>
       </main>
       <Footer />
       <FooterLogo />
