@@ -58,7 +58,12 @@ body {
   padding-left: 360px;
 }
 
-/* CSSファイルまたは<style>タグ内 */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0; 
+  }
+}
+
 @media (max-width: 768px) {
   .menu-button {
     display: block;
