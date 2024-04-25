@@ -27,6 +27,10 @@ const MobileHeader = () => {
 
   return (
     <div className="fixed top-0 left-0 z-50 bg-white w-full  shadow-md  px-3 py-3 scrollbar-hidden overflow-y-scroll shadow-md">
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      />
       <div className="flex justify-between items-center w-full">
         <Link href="/">
           <p>
@@ -37,9 +41,30 @@ const MobileHeader = () => {
             />
           </p>
         </Link>
-        <button onClick={toggleMenu}>
-          <img src="/images/hamburger-icon.svg" alt="メニュー" />
-        </button>
+        <div className="justify-start items-start gap-3.5 flex mr-2">
+          <button className="flex-col justify-start items-center inline-flex">
+            <div className="w-6 h-6 relative text-primary">
+              <span className="material-symbols-outlined">logout</span>
+              <Link
+                className="text-black text-[11px] font-normal font-inter leading-none"
+                href={""}
+              >
+                LOGIN
+              </Link>
+            </div>
+          </button>
+          <button
+            onClick={toggleMenu}
+            className="flex-col justify-start items-center inline-flex"
+          >
+            <div className="w-6 h-6 relative text-primary">
+              <span className="material-symbols-outlined">menu</span>
+              <div className="text-black text-[11px] font-normal font-inter leading-none">
+                MENU
+              </div>
+            </div>
+          </button>
+        </div>
       </div>
       <div className={`w-full ${isOpen ? "flex" : "hidden"} flex-col`}>
         {menuItems.map((item, index) => (
